@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-  get 'bills/index'
-
-  get 'sessions/new'
-
-  get 'users/new'
+  resources :bills
+  resources :users, only: [:new, :create]
+  resource :session, only: [:new, :create, :destroy]
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
