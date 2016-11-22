@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root "bills#index"
+
   resources :bills
   resources :users, only: [:new, :create]
   resource :session, only: [:new, :create, :destroy]

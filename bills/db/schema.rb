@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161122151437) do
+ActiveRecord::Schema.define(version: 20161122193306) do
+
+  create_table "bills", force: :cascade do |t|
+    t.string   "type"
+    t.decimal  "amount",     precision: 9, scale: 6
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email"

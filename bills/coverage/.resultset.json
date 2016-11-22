@@ -18,13 +18,22 @@
         1,
         1,
         1,
-        0,
+        1,
         null,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/alexandremguy/code/personal_projects/group_bills/bills/test/models/bill_test.rb": [
         1,
+        null,
         1,
-        0,
-        0,
+        null,
+        null,
         null,
         null
       ],
@@ -37,16 +46,8 @@
         null,
         null
       ],
-      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/models/user.rb": [
+      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/models/bill.rb": [
         1,
-        1,
-        0,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
         null
       ],
       "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/models/application_record.rb": [
@@ -54,24 +55,34 @@
         1,
         null
       ],
-      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/controllers/users_controller.rb": [
+      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/models/user.rb": [
         1,
         1,
-        1,
-        null,
-        null,
-        1,
         0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
         null,
         null,
         1,
         0,
+        0,
+        null,
+        null
+      ],
+      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/controllers/sessions_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        null,
         null,
         null
       ],
@@ -102,22 +113,24 @@
         1,
         null
       ],
-      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/controllers/sessions_controller.rb": [
+      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/controllers/users_controller.rb": [
         1,
         1,
+        1,
         null,
         null,
         1,
         0,
-        null,
         0,
         0,
-        null,
         0,
         null,
         0,
-        0,
         null,
+        null,
+        null,
+        1,
+        0,
         null,
         null
       ],
@@ -125,7 +138,7 @@
         1,
         1,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -148,6 +161,6 @@
         null
       ]
     },
-    "timestamp": 1479840851
+    "timestamp": 1479843363
   }
 }
