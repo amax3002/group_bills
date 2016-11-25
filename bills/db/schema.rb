@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161122193306) do
+ActiveRecord::Schema.define(version: 20161123181622) do
 
   create_table "bills", force: :cascade do |t|
     t.string   "type"
     t.decimal  "amount",     precision: 9, scale: 6
     t.datetime "created_at",                         null: false
     t.datetime "updated_at",                         null: false
+    t.integer  "user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -24,8 +25,9 @@ ActiveRecord::Schema.define(version: 20161122193306) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "password"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "password_hash"
   end
 
 end

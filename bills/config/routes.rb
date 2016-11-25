@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "bills#index"
+  root "homepages#index"
 
   resources :bills
   resources :users, only: [:new, :create]

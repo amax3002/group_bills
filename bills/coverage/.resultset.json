@@ -1,6 +1,15 @@
 {
   "MiniTest": {
     "coverage": {
+      "/Users/alexandremguy/code/personal_projects/group_bills/bills/test/controllers/homepages_controller_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/alexandremguy/code/personal_projects/group_bills/bills/test/controllers/sessions_controller_test.rb": [
         1,
         null,
@@ -67,73 +76,6 @@
         null,
         null
       ],
-      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/controllers/sessions_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/helpers/bills_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/helpers/sessions_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/helpers/users_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/controllers/users_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
       "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/controllers/bills_controller.rb": [
         1,
         1,
@@ -159,8 +101,79 @@
         0,
         null,
         null
+      ],
+      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/helpers/bills_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/helpers/homepages_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/controllers/sessions_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/alexandremguy/code/personal_projects/group_bills/bills/app/controllers/users_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
       ]
     },
-    "timestamp": 1479850818
+    "timestamp": 1479924108
   }
 }
