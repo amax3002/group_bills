@@ -5,10 +5,11 @@ class BillsController < ApplicationController
   end
 
   def new
-    @bill = Bill.new(user_id: current_user.id)
+    @bill = Bill.new(user_id: current_user.id, amount: 0)
   end
 
   def create
+    # Will call setter for each of the hash key value pairs.
     @bill = Bill.new(bill_params)
 
     if @bill.save
@@ -18,7 +19,14 @@ class BillsController < ApplicationController
     end
   end
 
+  def show
+    @bill = Bill.find(params["id"])
+    render :show
+  end
+
   def bill_params
-    params.require(:bill).permit(:title, :label_type, :description, :user_id)
+    # Whitelist params
+    # Returns a hash with only the keys listed in the permit method.
+    params.require(:bill).permit(:title, :bill_type, :amount, :user_id)
   end
 end

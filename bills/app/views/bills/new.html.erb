@@ -8,14 +8,14 @@
 
 <%= form_for @bill do |f| %>
 
-  <%= f.label :type %>
-  <%= f.text_field :type, class: 'form-control' %>
+  <%= f.label :bill_type %>
+  <%= f.select :bill_type, ["Restaurant", "Other"] %>
 
   <%= f.label :amount %>
-  <%= f.number_field :amount, class: 'form-control' %>
+  <%= f.text_field :amount, class: 'form-control' %>
 
   <%= f.hidden_field :user_id,  class: 'form-control' %>
 
   <%= f.submit class: "btn btn-primary"%>
 
-  <% end %>
+<% end %>

@@ -2,11 +2,32 @@
 
 <%= link_to "Add an Expense", new_bill_path %>
 
+<hr>
+
+<div class = "row content">
+  <div class = "col-md-4">
+    Name
+  </div>
+  <div class="col-md-4">
+    Type
+  </div>
+  <div <div class="col-md-4">
+    Created By
+  </div>
+</div>
+
+<hr>
+
 <% @bills.each do |bill| %>
-  <h4>
-    <div>
-      <%= link_to bill.amount, bill_path(bill.id) %>
-      <%= bill.type %>
-    </div>
-  </h4>
+<div class = "row content">
+  <div class = "col-md-4">
+    <%= link_to bill.amount, bill_path(bill.id) %>
+  </div>
+  <div class="col-md-4">
+    <%= bill.bill_type %>
+  </div>
+  <div <div class="col-md-4">
+    <%= bill.user.full_name%>
+  </div>
+</div>
 <% end %>

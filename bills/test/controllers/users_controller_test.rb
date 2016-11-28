@@ -6,9 +6,16 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  # test "new User" do
-  #   User.create(email: "amax3002@gmail.com", password: "password")
-  #   post users_path, params: {user: {email: "amax3002@gmail.com", first_name: 'Alex', last_name: 'Guy', password: "password"}}
-  #   assert_response :redirect
-  # end
+  test "new User" do
+    User.create!(first_name: "Alex", last_name: "Guy", email: "amax3002@gmail.com", password: "password")
+    post users_path, params: {user: {first_name: "Alex", last_name: "Guy", email: "amax3002@gmail.com", password: "password"}}
+    assert_equal User.last.first_name, "Alex"
+  end
+
+  test "method get full name with path" do
+    User.create!(first_name: "Alex", last_name: "Guy", email: "amax3002@gmail.com", password: "password")
+    post users_path, params: {user: {first_name: "Alex", last_name: "Guy", email: "amax3002@gmail.com", password: "password"}}
+    assert_equal User.last.full_name, "Alex Guy"
+  end
+
 end

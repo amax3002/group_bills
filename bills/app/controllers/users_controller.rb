@@ -8,13 +8,16 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     session["message"] = "you signed up!"
     if @user.save
-      redirect_to new_session_path
+      session["current_user_id"] = @user.id
+      redirect_to bills_path
     else
       render :new
     end
   end
 
+
+
   def user_params
-    params.require(:user).permit(:email, :full_name, :password)
+    params.require(:user).permit(:email, :first_name, :last_name, :password)
   end
 end

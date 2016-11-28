@@ -9,5 +9,9 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
+def one_bill
+  User.create!(first_name: "Alex", last_name: "Guy", email: "amax3002@gmail.com", password: "password")
+  Bill.create!(bill_type: "Other", amount: 50, user_id: User.last.id)
+end
   # Add more helper methods to be used by all tests here...
 end
