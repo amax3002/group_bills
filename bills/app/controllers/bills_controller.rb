@@ -24,6 +24,12 @@ class BillsController < ApplicationController
     render :show
   end
 
+  def destroy
+    @bill = Bill.find(params["id"])
+    @bill.destroy
+    redirect_to bills_path
+  end
+
   def bill_params
     # Whitelist params
     # Returns a hash with only the keys listed in the permit method.

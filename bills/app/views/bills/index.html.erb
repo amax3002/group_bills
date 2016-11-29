@@ -1,18 +1,21 @@
 <h1>Split your Expenses</h1>
 
-<%= link_to "Add an Expense", new_bill_path %>
+<%= link_to "Add an Expense", new_bill_path, class: "btn btn-primary" %>
 
 <hr>
 
 <div class = "row content">
-  <div class = "col-md-4">
+  <div class = "col-md-3">
     Name
   </div>
-  <div class="col-md-4">
+  <div class="col-md-3">
     Type
   </div>
-  <div <div class="col-md-4">
+  <div <div class="col-md-3">
     Created By
+  </div>
+  <div <div class="col-md-3">
+    Options
   </div>
 </div>
 
@@ -20,14 +23,17 @@
 
 <% @bills.each do |bill| %>
 <div class = "row content">
-  <div class = "col-md-4">
+  <div class = "col-md-3">
     <%= link_to bill.amount, bill_path(bill.id) %>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-3">
     <%= bill.bill_type %>
   </div>
-  <div <div class="col-md-4">
+  <div <div class="col-md-3">
     <%= bill.user.full_name%>
+  </div>
+  <div class="col-md-3">
+    <%= link_to "Delete", bill_path(bill.id), method: :delete, class: "btn btn-danger btn-xs"%>
   </div>
 </div>
 <% end %>
